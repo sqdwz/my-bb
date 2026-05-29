@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>随笔 on 星火手记</title><link>https://sqdwz.github.io/my-bb/tags/%E9%9A%8F%E7%AC%94/</link><description>Recent content in 随笔 on 星火手记</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Fri, 29 May 2026 09:00:00 +0800</lastBuildDate><atom:link href="https://sqdwz.github.io/my-bb/tags/%E9%9A%8F%E7%AC%94/index.xml" rel="self" type="application/rss+xml"/><item><title>第一篇手记</title><link>https://sqdwz.github.io/my-bb/posts/first-note/</link><pubDate>Fri, 29 May 2026 09:00:00 +0800</pubDate><guid>https://sqdwz.github.io/my-bb/posts/first-note/</guid><description>&lt;p&gt;这是博客的第一篇文章。&lt;/p&gt;
+&lt;p&gt;你可以把它改成开站记录：为什么想写博客、准备记录什么、希望它陪你走到哪里。个人博客最迷人的地方，是它可以慢慢长成一个人的地图。&lt;/p&gt;
+&lt;h2 id="可以写什么"&gt;可以写什么&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;创作过程和灵感碎片&lt;/li&gt;
+&lt;li&gt;技术学习笔记&lt;/li&gt;
+&lt;li&gt;游戏截图、角色理解和同人设定&lt;/li&gt;
+&lt;li&gt;每周总结&lt;/li&gt;
+&lt;li&gt;收藏的句子、音乐和图片&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;把 &lt;code&gt;draft&lt;/code&gt; 设为 &lt;code&gt;false&lt;/code&gt; 或移除草稿标记后，Hugo 就会发布文章。&lt;/p&gt;</description></item></channel></rss>
