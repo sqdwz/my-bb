@@ -1,0 +1,30 @@
+baseURL = "https://example.com/"
+locale = "zh-cn"
+title = "星火手记"
+summaryLength = 32
+enableRobotsTXT = true
+
+[params]
+  author = "你的名字"
+  description = "记录灵感、创作、技术和生活里的微光。"
+  avatar = "/images/klee-bg.png"
+
+[menus]
+  [[menus.main]]
+    name = "首页"
+    pageRef = "/"
+    weight = 10
+  [[menus.main]]
+    name = "文章"
+    pageRef = "/posts"
+    weight = 20
+  [[menus.main]]
+    name = "关于"
+    pageRef = "/about"
+    weight = 30
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true

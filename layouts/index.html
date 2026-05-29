@@ -1,0 +1,50 @@
+{{ define "main" }}
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Personal Blog</p>
+      <h1>把灵感、技术和日常，都收藏成一簇发光的文字。</h1>
+      <p class="hero-text">{{ site.Params.description }}</p>
+      <div class="hero-actions">
+        <a class="button primary" href="{{ "posts/" | relURL }}">阅读文章</a>
+        <a class="button ghost" href="{{ "about/" | relURL }}">了解我</a>
+      </div>
+    </div>
+    <aside class="profile-panel" aria-label="博主简介">
+      <div class="profile-avatar"></div>
+      <p class="profile-kicker">Author</p>
+      <h2>{{ site.Params.author }}</h2>
+      <p>这里可以写一句你的博客宣言：慢慢写，认真玩，把喜欢的事做成作品。</p>
+    </aside>
+  </section>
+
+  <section class="content-shell">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Latest Notes</p>
+        <h2>最新文章</h2>
+      </div>
+      <label class="search-box">
+        <span>搜索</span>
+        <input type="search" placeholder="输入关键词..." data-post-search>
+      </label>
+    </div>
+
+    <div class="post-grid" data-post-list>
+      {{ range first 6 (where site.RegularPages "Section" "posts") }}
+        <article class="post-card" data-post-card data-title="{{ lower .Title }}" data-tags="{{ lower (delimit .Params.tags " ") }}">
+          <div class="post-meta">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006.01.02" }}</time>
+            {{ with index .Params.categories 0 }}<span>{{ . }}</span>{{ end }}
+          </div>
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <p>{{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
+          <div class="tag-row">
+            {{ range .Params.tags }}
+              <span>{{ . }}</span>
+            {{ end }}
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
